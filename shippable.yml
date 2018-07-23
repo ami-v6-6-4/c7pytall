@@ -2,8 +2,6 @@ language: python
 
 python:
   - 2.7 #.5 
-  #- 3.4 #.8 
-  #- 3.5 #.5 
   - 3.6 #.5
 
 runtime:
@@ -19,11 +17,3 @@ build:
     - python --version 
     - pip --version #8.1.2
     - virtualenv --version #15.1.0
-    - docker pull shippabledocker/sample_node_pvt:ecr
-    
-integrations:
-    
-  hub:
- #Docker integration
-    - integrationName: ship-docker
-      type: dockerRegistryLogin
